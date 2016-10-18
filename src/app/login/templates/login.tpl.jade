@@ -1,16 +1,13 @@
-h1 Sign Up
-form.col-md-6.p-a-0.form-validation(role='form', name='singupForm', ng-submit='vm.signUp()')
+h1 Sign In
+form.col-md-6.p-a-0.form-validation(role='form', name='singupForm', ng-submit='vm.login()')
   .form-group
     label Username
     input.form-control(type='text', ng-model='vm.username', required='')
   .form-group
     label Password
     input.form-control(type='password', ng-model='vm.password', required='')
-  .form-group
-    label Confirm Password
-    input.form-control(type='password', ng-model='vm.passwordConfirm', required='')
   p.text-danger {{vm.errorMessage}}
   .col-md-6
     button.btn.btn-warning(ui-sref="home") Home
   .col-md-6.text-right
-    button.btn.btn-info(type='submit') Sign Up
+    button.btn.btn-info(type='submit') Sign In
