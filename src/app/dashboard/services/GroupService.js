@@ -27,7 +27,7 @@ function GroupService() {
 
 	/**
 	 * Get all groups from Firebase
-	 * 
+	 *
 	 * @return {Promise}
 	 */
 	function getAll() {
